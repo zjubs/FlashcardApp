@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.flashcard.LaunchActivity">
+
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="startYellow"
+        android:text="Yellow"
+        tools:layout_editor_absoluteX="101dp"
+        tools:layout_editor_absoluteY="109dp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="startRed"
+        android:text="Red"
+        tools:layout_editor_absoluteX="101dp"
+        tools:layout_editor_absoluteY="53dp" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="startBlue"
+        android:text="Blue"
+        app:layout_constraintTop_toBottomOf="@+id/button6"
+        tools:layout_editor_absoluteX="101dp" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="startGreen"
+        android:text="Green"
+        app:layout_constraintTop_toBottomOf="@+id/button7"
+        tools:layout_editor_absoluteX="101dp" />
+</android.support.constraint.ConstraintLayout>
